@@ -64,7 +64,7 @@ public class Java8LocalDateTime {
                 birthday.getDayOfMonth());
         MonthDay currentMonthDay = MonthDay.from(today);
         if (currentMonthDay.equals(monthDayBirth)) {
-            System.out.println("��HAPPY BIRTHDAY!! \n");
+            System.out.println("HAPPY BIRTHDAY!! \n");
         } else {
             System.out.println("Today is not your birthday! \n");
         }
