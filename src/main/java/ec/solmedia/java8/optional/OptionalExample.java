@@ -79,7 +79,7 @@ public class OptionalExample {
         String password = " password";
         Optional passwordOptional = Optional.ofNullable(password);
         System.out.println("Shoud be equal " + passwordOptional.filter(pass -> pass.equals("password")).isPresent());
-        System.out.println("Is equal " + passwordOptional.map(String::trim).filter(pass -> pass.equals("password")).isPresent());
+        //System.out.println("Is equal " + passwordOptional.map(String::trim).filter(pass -> pass.equals("password")).isPresent());
 
         //flatMap
         Person person = new Person("john", 26);
