@@ -125,8 +125,8 @@ public class Java8LocalDateTime {
         // how many ...
         LocalDate birthMartin = LocalDate.of(2014, Month.NOVEMBER, 21);
         Period periodo = Period.between(birthMartin, today);
-        System.out.printf("Martin is %d months, %d days %n %n",
-                periodo.getMonths(), periodo.getDays());
+        System.out.printf("Martin is %d years, %d months, %d days %n %n",
+                periodo.getYears(), periodo.getMonths(), periodo.getDays());
         // output: Martin is 4 months, 6 days
 
         // SimpleDateFormat was not thread safe

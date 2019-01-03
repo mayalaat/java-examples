@@ -19,7 +19,7 @@ public class Java8Streams {
         // Count the empty strings
         List<String> strList = Arrays.asList("abc", "", "ghi", "jkl", "",
                 "pqrs");
-        long count = strList.stream().filter(x -> x.isEmpty()).count();
+        long count = strList.stream().filter(String::isEmpty).count();
         System.out.printf("List %s has %d empty strings %n", strList, count);
 
         // Count the strins length more 3
@@ -34,7 +34,7 @@ public class Java8Streams {
 
         List<String> G7 = Arrays.asList("USA", "Japan", "France", "Germany",
                 "Italy", "U.K.", "Canada");
-        String G7String = G7.stream().map(x -> x.toUpperCase())
+        String G7String = G7.stream().map(String::toUpperCase)
                 .collect(Collectors.joining(", "));
         System.out.printf("G7 are %s %n", G7String);
 
@@ -50,7 +50,7 @@ public class Java8Streams {
                 .summaryStatistics();
         System.out.printf("Sum of all numbers %d %n %n", stats.getSum());
 
-        G7.forEach(n -> System.out.println(n));
+        G7.forEach(System.out::println);
         System.out.println();
 
         /**
@@ -75,7 +75,7 @@ public class Java8Streams {
          * letters long, you can pass combination of two Predicate
          */
         languages.stream().filter(startWithJ.or(endsWitha))
-                .forEach(t -> System.out.println(t));
+                .forEach(System.out::println);
 
         /**
          * applying 12% VAT on each purchase Without lambda expressions:
@@ -106,8 +106,8 @@ public class Java8Streams {
         // }
         // }
 
-        names.stream().filter(n -> condition.test(n))
-                .forEach(t -> System.out.println(t));
+        names.stream().filter(condition)
+                .forEach(System.out::println);
     }
 
 }
