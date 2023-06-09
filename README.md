@@ -22,3 +22,12 @@
 - Collections
   - copyOf
   - toUnmodifiableList
+
+## Java 11
+- String
+  - repeat
+  - isBlank
+  - strip
+  - stripLeading
+  - stripTrailing
+  - lines
