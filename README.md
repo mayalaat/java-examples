@@ -35,3 +35,10 @@
 ## Java 12
 - Compact NumberFormat
 - Switch Statements/Expressions
+
+## Java 13
+- Text Blocks
+- String
+  - stripIndent
+  - translateEscapes
+  - formatted

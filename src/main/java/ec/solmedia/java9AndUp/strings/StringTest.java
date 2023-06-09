@@ -11,6 +11,20 @@ public class StringTest {
     System.out.println(name.stripLeading()); // John Doe    John Doe    John Doe
     System.out.println(name.stripTrailing()); //  John Doe    John Doe    John Doe
     System.out.println(name.lines()); // Stream<String>
+
+    // Text Blocks - java 13
+    var json = """
+        {
+          "name": "web",
+          "version": "1.0.0",
+          "dependencies": "AppA"
+        }
+        """;
+    // stripIndent, translateEscapes, formatted - java 13
+    System.out.println(json.stripIndent());
+    System.out.println(json.translateEscapes());
+    var greeting = "Hi %s".formatted("Alejandro");
+    System.out.println(greeting);
   }
 
 }
