@@ -31,3 +31,6 @@
   - stripLeading
   - stripTrailing
   - lines
+
+## Java 12
+- Compact NumberFormat
