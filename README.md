@@ -34,3 +34,4 @@
 
 ## Java 12
 - Compact NumberFormat
+- Switch Statements/Expressions
