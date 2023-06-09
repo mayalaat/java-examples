@@ -17,3 +17,4 @@ out
 *.properties
 
 .nb-gradle/
+.gradle
